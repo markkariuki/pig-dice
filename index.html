@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--here are where the links go-->
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin|Roboto" rel="stylesheet">
+
+  <title>Pig Game</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Pig-Dice Gamming</h1>
+
+    <!--player interface-->
+    <div class="row">
+      <div class="col-md-3" id="player-col">
+
+        <!--form to collect the players names-->
+        <form id="players">
+          <div class="form-group">
+            <label for="player1">Name</label>
+            <input type="text" class="form-control" id="player1" placeholder="Player 1">
+          </div>
+          <div class="form-group">
+            <label for="player2">Name</label>
+            <input type="text" class="form-control" id="player2" placeholder="Player 2">
+          </div>
+
+          <button class="btn btn-success" id="player" type="submit">Enter Game</button>
+        </form>
+
+      </div>
+
+      <div class="col-md-6" id="roll">
+        <div class="col-md-3" id="player1-roll">
+          <h3 id="player1"></h3>
+          <button class="btn btn-primary" id="die1">Roll!</button>
+          <button class="btn btn-default" id="hold1">Hold!</button>
+        </div>
+
+
+        <div class="col-md-3" id="player2-roll">
+          <h3 id="player2"></h3>
+          <button class="btn btn-warning" id="die2">Roll!</button>
+          <button class="btn btn-danger" id="hold2">Hold!</button>
+        </div>
+      </div>
+
+
+      <div class="col-md-3" id="rules">
+        <h2 id="black-rules">Rules:</h2>
+        <ul>
+          <li>If a player get's a 1 their score is zero and it becomes the next person's turn.</li>
+          <li>Any other number is rolled and added to a players score.</li>
+          <li>Most important rule... Have fun!!</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <!--end of the container-->
+  <div class="container">
+    <div class="row" id="display">
+      <div class="col-md-4">
+        <div class="display">
+          <h1>Score</h1>
+          <h2 class="score" id="score1">0</h2>
+        </div>
+      </div>
+
+      <div class="col-md-4" id="die-count">
+        <h4>Die:</h4>
+        <h2 id="die-count">0</h2>
+      </div>
+
+      <div class="col-md-4">
+        <div class="display">
+          <h1>Score</h1>
+          <h2 class="score" id="score2">0</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

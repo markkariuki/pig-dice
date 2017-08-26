@@ -1,0 +1,19 @@
+#rules {
+  float: right;
+  background-color: white;
+  padding: 2%;
+}
+
+#black-rules {
+  margin-top: 0.2em;
+  color: black;
+}
+
+#player1-roll {
+  padding: 2%;
+}
+
+#player2-roll {
+  padding: 2%;
+  float: right;
+}
