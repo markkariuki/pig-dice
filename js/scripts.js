@@ -96,7 +96,7 @@ $(document).ready(function() {
 
                  holdNum = [];
                  $("h4#hold-total2").text("0");
-                 alert(players[0].playerName + " your turn");
+                 alert(players[0].playerName + " your turn!");
                } else {
                  holdNum.push(die);
                  var total = holdNum.reduce(function(total, countNumber) {
