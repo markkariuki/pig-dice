@@ -5,7 +5,7 @@ this is a dice rolling game
 >Project Name: Pig-Dice
 >---
 ## Description
->A dice rolling game. When you reach 100 you are the winner
+>A dice rolling game. When you reach 100 you are the winner. And thats the fun part of it.
 >---
 ### Specs
 >These are some of the specs:
